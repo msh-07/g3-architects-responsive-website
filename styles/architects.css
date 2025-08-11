@@ -134,22 +134,36 @@ main > section{
 
 .features{
     gap: 140px;
+    
 }
  #feature-section-title{
     border-left:5px solid #FF900E;
     padding-left: 20px;
  }
  .feature-card{
-     padding: 30px;
+    padding: 40px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
- }
- 
- .feature-card ,.feature-title{
+}
+
+.feature-card ,.feature-title{
     font-size: 1,25rem;
     font-weight: 600;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -130px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight:700;
 }
 
 /* some facts related styles */
@@ -197,10 +211,27 @@ main > section{
      filter: grayscale(100%);
 }
 
+/* footer styles */
+
+.footer-section{
+    margin:130px  auto;
+    width: 1440px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+}
+.footer-description{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-text{
+    margin-top: 25px;
+}
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .nav-bar,.nav-links{
+    .nav-bar,.nav-links,.features{
         flex-direction: column;
 }
 .teams{
@@ -230,6 +261,20 @@ main > section{
 .button-text{
    text-align: center;
 }
+.feature-responsive-img{
+    width: 100%;
+}
+#experience-badge{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.footer-section{
+    width: 100%;
+    height: 100%;
+}
+
 }
 /* Medium Sized Device */
 @media screen and (min-width:576px) and (max-width:992px){
@@ -263,7 +308,31 @@ main > section{
    text-align: center;
    margin-top: 50px;
 }
+.features{
+    display: flex;
+    flex-direction: column;
+    margin-top: -5px;
+}
 .fact-description{
     margin: 0 auto;
+}
+.section-title,.feature-paragraph{
+    text-align: center;
+}
+.feature-card-container-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.feature-responsive-img{
+    width: 100%;
+    margin: 0 auto;
+}
+#experience-badge{
+  margin-top: 60px;
+  margin-left: 280px;
+}
+.footer-section{
+    width: 100%;
+    height: 100%;
 }
 }
